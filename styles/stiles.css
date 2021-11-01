@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    height: 100vh;
+    font-size: 16px;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #e6ecff;
+}
+
+main {
+    max-width: 450px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+main p {
+    color: #757575;
+}
+
+main .image-section{
+    min-height: 220px;
+}
+
+main .image-section img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+main .sumary-section{
+    font-size: 14px;
+}
+
+main .plan-section{
+    margin: 20px auto;
+    padding: 20px 20px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f5f7ff;
+}
+
+main .plan-section .plan-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+main .plan-section .plan-left .plan-img-div {
+    height: 48px;
+}
+
+main .plan-section .plan-left .plan-ul-div {
+    margin-left: 10px;
+}
+
+main .plan-section .plan-left .plan-ul-div ul {
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+main .plan-section .plan-left .plan-ul-div ul li:first-child {
+    font-weight: 700;
+}
+
+main .plan-section .plan-left .plan-ul-div ul li:nth-child(2) {
+    color: #757575;
+}
+
+main .plan-section .plan-right {
+    text-decoration: underline;
+    color: #3829e0;
+    font-weight: 700;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+main .plan-section .plan-right:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #978fef;
+}
+
+main .button-section {
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+main .button-section .button-1,
+main .button-section .button-2 {
+    font-weight: 700;
+}
+
+main .button-section .button-1 {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border: solid 1px #3829e0;
+    border-radius: 10px;
+    background-color: #3829e0;
+    color: #fff;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    -webkit-box-shadow: 0 20px 20px rgba(56, 41, 224, 0.2);
+            box-shadow: 0 20px 20px rgba(56, 41, 224, 0.2);
+}
+
+main .button-section .button-1:hover {
+    background-color: #867de8;
+    border: solid 1px #867de8;
+}
+
+main .button-2 {
+    margin: 25px auto;
+    border: none;
+    background-color: white;
+    color: #757575;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+main .button-2:hover {
+    color: #000;
+}
+
+@media screen and (min-width: 600px) {
+    main .summary-section p {
+    font-size: 16px;
+    }
+    main .plan-section {
+    font-size: 16px;
+    }
+}
